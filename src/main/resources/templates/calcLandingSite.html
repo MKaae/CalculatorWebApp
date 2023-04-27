@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<form action="/calcLandingSite" method="post">
+    <label for="first-Currency">First Currency</label>
+    <input id="first-Currency" name="first_Currency" type="text">
+
+    <label for="second-Currency">Second Currency</label>
+    <input id="second-Currency" name="second_Currency" type="text">
+
+    <label for="value-exchange">Value Exchange</label>
+    <input id="value-exchange" name="value_exchange" type="text">
+
+    <input type="submit" value="Show Exchange Rate">
+</form>
 </body>
 </html>
